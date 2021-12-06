@@ -1,7 +1,7 @@
 image-ci:
 	docker build -t npm-test:ci
 
-release:
+release: image-ci
 	docker-compose run --rm ci sh -c "\
 		echo //$(NPM_DOMAIN)/:_authToken=$(NPM_TOKEN) >> .npmrc && \
 		echo registry=https://$(NPM_DOMAIN) >> .npmrc && \
