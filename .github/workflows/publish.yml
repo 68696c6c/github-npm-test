@@ -1,9 +1,8 @@
 name: Publish
 
 on:
-  push:
-    branches:
-    - master
+  release:
+    types: [ published ]
 
 jobs:
   publish:
@@ -18,6 +17,5 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
         scope: '@68696c6c'
         cache: 'yarn'
-    - run: git fetch --tags
     - run: yarn
     - run: yarn release --yes
