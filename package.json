@@ -1,8 +1,9 @@
 {
   "name": "root",
-  "version": "0.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "bump": "lerna version prerelease",
     "release": "lerna publish from-git"
