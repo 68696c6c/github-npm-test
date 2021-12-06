@@ -1,6 +1,6 @@
 {
   "name": "@68696c6c/example",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "github packages publishing test project",
   "private": false,
   "main": "index.js"
