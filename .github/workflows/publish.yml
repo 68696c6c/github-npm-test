@@ -1,0 +1,16 @@
+name: Publish
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-18.04
+    env:
+      NPM_DOMAIN: npm.pkg.github.com
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+    - uses: actions/checkout@v2
+    - run: make release

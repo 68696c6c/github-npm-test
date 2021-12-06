@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bump": "lerna version prerelease",
+    "release": "lerna publish from-git"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
