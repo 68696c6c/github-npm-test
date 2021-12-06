@@ -2,8 +2,6 @@ name: Release Drafter
 
 on:
   push:
-    branches:
-    - all
 
 jobs:
   update-release-draft:
