@@ -1,5 +1,5 @@
 image-ci:
-	docker build -t npm-test:ci
+	docker build -t npm-test:ci .
 
 release: image-ci
 	docker-compose run --rm ci sh -c "\
