@@ -8,4 +8,5 @@ release: image-ci
 		echo publishing packages to registry: $(NPM_DOMAIN) && \
 		cat lerna.json && \
 		cat .npmrc && \
+		git fetch --tags && \
 		yarn release --yes"
